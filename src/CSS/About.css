@@ -1,0 +1,35 @@
+.popupContent-container{
+    position: absolute;
+    background-color: #eee;
+    width: 500px;
+    text-align: left;
+    top: -30px;
+    border-radius: 10px;
+    left: -150px;
+    padding: 10px;
+}
+
+.close-popup-container{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.close-popup-container:hover{
+    color: red;;
+}
+
+/* .popup-content-container ul{
+    padding: 100px;
+} */
+
+.popupQuestion{
+    box-sizing: border-box;
+}
+
+
+
+.popup-title-container{
+    text-align: center;
+    padding: 5px;
+}
