@@ -1,0 +1,11 @@
+.screenDisplay{
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    background: black;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    overflow-y:auto;
+    color: white;
+}
