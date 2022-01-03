@@ -411,7 +411,7 @@ export default function parseEquation(equation,isBigNumMode)
     let valuesStack = new Stack();
 
     //Get the pattern used for tokenizing the equation when in decimal mode
-    let hugeDecimalRegex = /(^|(?<=[+\-x\^÷(]))-(sin|cos|tan)\((\d+\.\d+|\.\d+|\d+)\)|(sin|cos|tan)\((\d+\.\d+|\.\d+|\d+)\)|^-(\d+\.\d+|\.\d+|\d+)|(?<=[+\-x\^÷(])-(\d+\.\d+|\.\d+|\d+)|[\-+x÷^()]|(\d+\.\d+|\.\d+|\d+)/gi;
+    let hugeDecimalRegex = /(^|(?<=[+\-x\^÷(]))-(sin|cos|tan)\((-(\d+\.\d+|\.\d+|\d+)|(\d+\.\d+|\.\d+|\d+))\)|(sin|cos|tan)\((-(\d+\.\d+|\.\d+|\d+)|(\d+\.\d+|\.\d+|\d+))\)|^-(\d+\.\d+|\.\d+|\d+)|(?<=[+\-x\^÷(])-(\d+\.\d+|\.\d+|\d+)|[\-+x÷^()]|(\d+\.\d+|\.\d+|\d+)/gi;
     
     //pattern used for tokenizing the equation in bigNumMode.
     let bigNumRegex = /^-\d+|(?<=[+\-x\^÷(])-\d+|[\-+x÷^()]|\d+/gi;
